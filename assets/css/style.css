@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Roboto:ital,wght@0,700;1,400&display=swap');
+body{
+    font-family: Barlow;
+}
+.container{
+    padding: 0;
+}
+header{
+    background-color: #3EBEFF;
+}
+header nav  a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+header > nav  >.links > .button{
+    background-color: #fff;
+    color:#000 ;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+nav{
+    position: relative;
+}
+.links{
+    position: absolute;
+    right: 0;
+}
+header h1{
+    color: #fff ;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: Fraunces;
+    font-size: 42px;
+}
+[src="assets/images/icon-arrow-down.svg"]{
+    width: 20px;
+    height: 120px;
+    position: absolute;
+    margin-top: 8%;
+}
+[src="assets/images/desktop/image-header.jpg"]{
+    width: 60%;
+    height: 30%;
+}
+.igrediente .content h4{
+    font-size: 50px;
+    text-transform: capitalize;
+    color:  #494953;
+    font-family: Fraunces;
+    font-weight: bold;
+}
+.igrediente .content p{
+    font-size: 14px;
+    text-transform: capitalize;
+    color:  hsl(232, 10%, 55%);
+    max-width: 450px;
+    line-height: 25px;
+}
+.receitas{
+    margin-bottom: 8rem;
+}
+.receitas .igrediente a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #494953;
+    text-transform: capitalize;
+    font-weight: 900;
+    position: relative;
+}
+.receitas .igrediente:nth-child(1) a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 120px;
+    margin-left: -10px;
+    margin-top: -8px ;
+    height: 7px;
+    border-radius: 10px;
+    z-index: -10;
+    background-color:  #FCF5D9;
+    
+}
+.receitas .igrediente:nth-child(2) a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 120px;
+    margin-left: -10px;
+    margin-top: -8px ;
+    height: 7px;
+    border-radius: 10px;
+    z-index: -10;
+    background-color:  #F9E6E4;
+}
+.bg-image .div1{
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 530px
+}
+.bg-image .div2{
+    background-image: url('../images/desktop/image-photography.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 530px
+}
+.bg-image p {
+    max-width: 400px;
+}
+.depoimenst h3{
+    text-transform: capitalize;
+    color: hsl(210, 4%, 67% ) ;
+    letter-spacing: 10px;
+    font-family: Fraunces;
+    font-size: 33px;
+    margin-bottom: 7rem;
+}
+.bg-image .div1 h3{
+    text-transform: capitalize;
+    color: hsl(167, 40%, 24%) ;
+    font-weight: bold;
+    font-size: 30px;
+}
+.bg-image .div1 p{
+    color: hsl(168, 34%, 41%) ;
+    text-transform: capitalize;
+}
+.bg-image .div2 h3{
+    text-transform: capitalize;
+    color: #1E5671 ;
+    font-weight: bold;
+    font-size: 30px;
+}
+.bg-image .div2 p{
+    color: hsl(168, 34%, 41%) ;
+    text-transform: capitalize;
+    color: #3580A8
+}
+.client img{
+    clip-path: circle();
+    width: 70px;
+    height: 70px
+}
+.client p{
+    line-height: 26px;
+    color: hsl(213, 9%, 39%)
+}
+.client strong{
+   color: #222930 ;
+   font-size: 24px;
+   text-transform: capitalize;
+   font-family: Fraunces;
+}
+.client div{
+    color: hsl(210, 4%, 67%) ;
+    text-transform: capitalize
+}
+.imagesComida{
+    margin-top: 8rem;
+}
+footer{
+    background-color: #91D3C6;
+    padding: 5rem 0;
+
+}
+footer .linksFooter a{
+    text-decoration: none;
+    color: #589C8D ;
+    margin-right: 1rem;
+    text-transform: capitalize;
+}
+footer .midisSocias i {
+    color: #2B7262;
+    font-size: 26px;
+    margin-right: 1rem;
+}
+.menuMobile{
+    background-color: #fff;
+    margin-bottom: -8rem;
+    max-width: 70%;
+    margin: auto;
+    transform: rotate(-180deg);
+    padding-top: 5rem;
+    position: absolute;
+    left: 40% ;
+}
+.menuMobile::after{
+    content: 'as';
+    position: absolute;
+    display: block;
+    background-color: #1E5671;
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-180deg);
+    margin-top: -200px;
+}
+
+.menuMobile a{
+    color: hsl(213, 9%, 39%) ;
+    transform: rotate(-180deg);
+    padding-top: 1rem;
+    
+}
+.mobileMenu{
+    background-color: #1E5671;
+}
+@media (max-width:950px) {
+    .igrediente .content h4{
+        font-size: 30px;
+    }  
+}
+@media (max-width: 767px) {
+  .igrediente .img img{
+     object-fit: contain;
+  }
+  .bg-image .div1 ,
+  .bg-image .div2 { 
+    background-position: center;
+  }
+  header h1{
+    color: #fff ;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: Fraunces;
+    font-size: 30px;
+  }
+  [src="assets/images/icon-arrow-down.svg"]{
+    width: 20px;
+    height: 70px;
+    position: absolute;
+    margin-top: 20%;
+  }
+  [src="assets/images/desktop/image-header.jpg"]{
+    width: 100%;
+    height: 40%;
+ }
+ .mobile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 20px;
+
+    clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 14% 92%, 7% 100%, 0 89%, 0 90%);
+    transform: rotate(180deg);
+ }
+ .mobile a{
+    margin-bottom: 20px;
+    color: hsl(232, 10%, 55%) ;
+    transform: rotate(180deg);
+ }
+ 
+ .mobile a:nth-child(1){
+    background-color: hsl(51, 100%, 49%);
+    color: #000;
+    font-weight: 900;
+    padding: 10px 1.6rem ;
+    border-radius: 20px;
+ }
+ .links{
+    position: static;
+ }
+}
